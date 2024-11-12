@@ -9,8 +9,9 @@ public class Cheers {
                 for (int i=0;i<cheers.length();i++){
                         char c= cheers.charAt(i);
                         for (int j=0; j<letters.length();j++){
-                                if (letters.charAt(j)==c){
+                                if (letters.indexOf(j)==c){
                                         aAn= "an";
+                                        break;
                                 }else {
                                         aAn= "a";
                                 };
