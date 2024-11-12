@@ -18,7 +18,7 @@ public class Cheers {
                         System.out.println("Give me "+aAn+" "+c+": "+c+"!");
                 }
                 System.out.println("What does that spell?");
-                for (k=0;k<repetition;k++){
+                for (int k=0;k<repetition;k++){
                  System.out.println(cheers+"!!!");
                 }
         }
