@@ -5,18 +5,18 @@ public class Cheers {
                 int repetition=Integer.parseInt(args[1]);
                 String cheers= cheerInPut.toUpperCase();
                 String letters="AEFHILMNORSX";
-                String aAn="";
+                String anA="";
                 for (int i=0;i<cheers.length();i++){
                         char c= cheers.charAt(i);
                         for (int j=0; j<letters.length();j++){
                                 if (letters.indexOf(c)==-1){
-                                        aAn= "a";
+                                        anA= "a";
                                         break;
                                 }else {
-                                        aAn= "an";
+                                        anA= "an";
                                 };
                         }
-                        System.out.println("Give me "+aAn+" "+c+": "+c+"!");
+                        System.out.println("Give me "+anA+" "+c+": "+c+"!");
                 }
                 System.out.println("What does that spell?");
                 for (int k=0;k<repetition;k++){
