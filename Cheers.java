@@ -10,7 +10,7 @@ public class Cheers {
                         char c= cheers.charAt(i);
                         for (int j=0; j<letters.length();j++){
                                 if (letters.indexOf(c)==-1){
-                                        anA= "a";
+                                        anA= "a ";
                                         break;
                                 }else {
                                         anA= "an";
