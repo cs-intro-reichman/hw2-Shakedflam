@@ -5,7 +5,7 @@ public class CalcPi {
 		double PI=Math.PI;
 		System.out.println("pi according to Java: "+PI);
 		double total=1;
-		double reduction;
+		double reduction=0;
 		int repetition=5;
 		while (inputNum>0){
 			total+=(1/(double)repetition);
@@ -20,7 +20,7 @@ public class CalcPi {
 			rep+=4;
 		}
 		total-=reduction;
-		System.out.println("pi, approximated: "+total);
+		System.out.println("pi, approximated: "+ total);
 
 		}
 	}
