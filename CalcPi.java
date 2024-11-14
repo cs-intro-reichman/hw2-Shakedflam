@@ -18,8 +18,10 @@ public class CalcPi {
 			rep+=2;
 		}
 	
-		System.out.println("pi, approximated::     "+ total*4);
+		System.out.println("pi, approximated:     "+ total*4);
 
 		}
 	}
 
+
+	
