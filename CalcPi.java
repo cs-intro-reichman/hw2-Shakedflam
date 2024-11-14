@@ -6,22 +6,21 @@ public class CalcPi {
 		System.out.println("pi according to Java: "+PI);
 		double total=1;
 		double reduction=0;
-		int repetition=5;
-		while (inputNum>0){
-			total+=(1/(double)repetition);
-			inputNum-=2;
-			repetition+=4;
-
-		}
-		int rep=3;
-		while (inputNum>0) {
-			reduction-=(1/(double)rep);
-			inputNum-=2;
+		int repetition=1;
+		int rep=5;
+		for (int i=2;i<inputNum;i+=2){
+			
+			total+=(1/(double)rep);
 			rep+=4;
 		}
-		total-=reduction;
-		System.out.println("pi, approximated: "+ total);
+		int repMinus=3;
+		for (int j=1;j<inputNum;j+=2){
+			reduction=(1/(double)repMinus);
+			total-=reduction;
+			repMinus+=4;
+		}
+		System.out.println("pi, approximated: "+ total*4);
 
 		}
 	}
-}
+
