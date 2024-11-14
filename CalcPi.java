@@ -4,22 +4,21 @@ public class CalcPi {
 	    int inputNum=Integer.parseInt(args[0]);
 		double PI=Math.PI;
 		System.out.println("pi according to Java: "+PI);
-		double total=1;
+		double total=0;
 		double reduction=0;
 		int repetition=1;
-		int rep=5;
-		for (int i=2;i<inputNum;i+=2){
-			
+		int rep=1;
+		for (int i=0;i<inputNum;i++){
+			if (i%2==0){
 			total+=(1/(double)rep);
-			rep+=4;
+			}else{
+				total-=(1/(double)rep);
+			}
+
+			rep+=2;
 		}
-		int repMinus=3;
-		for (int j=1;j<inputNum;j+=2){
-			reduction=(1/(double)repMinus);
-			total-=reduction;
-			repMinus+=4;
-		}
-		System.out.println("pi, approximated: "+ total*4);
+	
+		System.out.println("pi, approximated::     "+ total*4);
 
 		}
 	}
