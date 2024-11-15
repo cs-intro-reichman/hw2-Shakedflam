@@ -8,10 +8,11 @@ public class Collatz {
 			System.out.println("Every one of the first "+inputNumber+" hailstone sequences reached 1.");
 		}else{
 			for (int i=1;i<=inputNumber;i++){
-				int iteration=0;
+				System.err.print(i+" ");
+				int iteration=1;
 				int target=i;
 				int num=2;
-				while(num>1){
+				while(num>=1){
 			         num=target;
 					if(target%2==0){
 						target/=2;
@@ -23,6 +24,9 @@ public class Collatz {
 						num=target;
 					}
 					iteration++;
+					if (num==1){
+						break;
+					}
 				}
 					System.out.print("("+iteration+")");
 					System.out.println();
