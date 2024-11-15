@@ -30,7 +30,7 @@ public class Collatz {
 				}
 					System.out.println("("+iteration+")");
 			}
-			System.err.println("Every one of the first "+inputNumber+" hailstone sequences reached 1.");
+			System.out.println("Every one of the first "+inputNumber+" hailstone sequences reached 1.");
 
 		}
 		}
