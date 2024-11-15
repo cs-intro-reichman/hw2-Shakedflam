@@ -8,8 +8,8 @@ public class Collatz {
 			System.out.println("Every one of the first "+inputNumber+" hailstone sequences reached 1.");
 		}else{
 			for (int i=1;i<=inputNumber;i++){
-				System.err.print(i+" ");
-				int iteration=1;
+				System.out.print(i+" ");
+				int iteration=1;// start with one, it wants to know how many numbers' and not steps
 				int target=i;
 				int num=2;
 				while(num>=1){
