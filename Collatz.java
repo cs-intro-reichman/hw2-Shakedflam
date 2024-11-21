@@ -12,7 +12,7 @@ public class Collatz {
 				int iteration=1;// start with one, it wants to know how many numbers' and not steps
 				int target=i;
 				int num=2;
-				while(num>=1){
+				while(num>1){
 			         num=target;
 					if(target%2==0){
 						target/=2;
